@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { BooksListComponent } from './common/components/books-list/books-list.component';
 import { AddBookComponent } from './common/components/add-book/add-book.component';
 import { BookDetailsComponent } from './common/components/book-details/book-details.component';
+import { HedearComponent } from './hedear/hedear.component';
+import { UsersComponent } from './common/components/users/users.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BooksListComponent,
     AddBookComponent,
-    BookDetailsComponent
+    BookDetailsComponent,
+    HedearComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
