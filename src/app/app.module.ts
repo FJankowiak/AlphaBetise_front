@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { BooksListComponent } from './common/components/books-list/books-list.component';
 import { AddBookComponent } from './common/components/add-book/add-book.component';
 import { BookDetailsComponent } from './common/components/book-details/book-details.component';
-import { HedearComponent } from './hedear/hedear.component';
+import { HeaderComponent } from  './header/header.component';
 import { UsersComponent } from './common/components/users/users.component';
 
 @NgModule({
@@ -15,8 +15,8 @@ import { UsersComponent } from './common/components/users/users.component';
     BooksListComponent,
     AddBookComponent,
     BookDetailsComponent,
-    HedearComponent,
-    UsersComponent
+    HeaderComponent,
+    UsersComponent,
   ],
   imports: [
     BrowserModule,
