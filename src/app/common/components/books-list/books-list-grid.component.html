@@ -1,0 +1,33 @@
+<div class="main-content">
+    <div class="section-content section-content-p30">
+        <div class="container-fluid">
+            <div class="row">
+
+                <!-- loop over the collection of products -->
+                <div *ngFor="let book of books " class="col-md-3">
+
+                    <div class="book-box">
+                        <!--<a routerLink="/books/{{ book.titre }}">
+                            <img src="{{ book.imageUrl }}" class="img-responsive">
+                        </a>-->
+
+                        <a routerLink="/books/{{ book.titre }}">
+                          <h3>{{ book.titre }}</h3>
+                        </a>
+                        <div class="price">{{ book.prix | currency:'USD' }}</div>
+                          <a href="#" class="primary-btn">Add to cart</a>
+                    </div>
+
+                </div>
+
+                <!-- if products empty then display a message -->
+                <!-- include the "?" connu comme un operateur de navigation sûr  - il protège contre les valeurs nulles et non définies dans les chemins de propriété -->
+                <!-- bootstrap style - role alert -Accessibility: provide extra info to
+                assistive technologies such as screen readers -->
+                <div *ngIf="books?.length == 0" class="alert alert-warning col-md-12" role="alert">
+                No books found.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
