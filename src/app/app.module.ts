@@ -8,6 +8,7 @@ import { AddBookComponent } from './common/components/add-book/add-book.componen
 import { BookDetailsComponent } from './common/components/book-details/book-details.component';
 import { HeaderComponent } from  './header/header.component';
 import { UsersComponent } from './common/components/users/users.component';
+import { LoginComponent } from './auth/login/login.component';
 //import { BookService } from './services/book.service';
 //import { HttpClient } from '@angular/common/http';
 
@@ -19,6 +20,7 @@ import { UsersComponent } from './common/components/users/users.component';
     BookDetailsComponent,
     HeaderComponent,
     UsersComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
