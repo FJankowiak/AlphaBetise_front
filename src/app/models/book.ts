@@ -10,8 +10,10 @@ export class Book {
     public prix: number,
     public editeur: string,
     public auteurs:string,
-    public notesBiographiques:string
+    public notesBiographiques:string,
+    public mainImgUrl:string
 
   ) { }
 
 }
+
